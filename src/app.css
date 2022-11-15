@@ -1,0 +1,27 @@
+body {
+  background: rgb(187, 181, 181);
+  background: linear-gradient(
+    90deg,
+    rgba(187, 181, 181, 1) 0%,
+    rgba(9, 9, 121, 1) 37%,
+    rgba(8, 62, 130, 1) 57%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.hola{
+    display: block;
+    font-family: monospace;
+    white-space:nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+
+    animation: typing 2s steps(12),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from  {width: 0;}
+}
+@keyframes blink {
+50% {border-color: transparent;}
+}
